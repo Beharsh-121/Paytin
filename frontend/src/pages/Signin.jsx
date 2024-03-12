@@ -15,7 +15,7 @@ export const Signin = () => {
 
   const handleSignin = async () => {
     try {
-      const response = await fetch("http://localhost:3000/paytin/payments/user/signin", {
+      const response = await fetch("https://paytin.onrender.com/paytin/payments/user/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
