@@ -44,7 +44,7 @@ export const Signup = () => {
             }} placeholder="123456" label={"Password"}/>
             <div>
               <Button onClick={async () => {
-                const response = await axios.post("http://localhost:3000/paytin/payments/user/signup", {
+                const response = await axios.post("https://paytin.onrender.com/payments/user/signup", {
                   username,
                   password,
                   firstName,
