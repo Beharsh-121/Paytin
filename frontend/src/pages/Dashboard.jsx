@@ -15,7 +15,7 @@ export const Dashboard = () => {
     try {
       const getBalance = async () => {
         const response = await fetch(
-          "http://localhost:3000/paytin/payments/account/balance",
+          "https://paytin.onrender.com/paytin/payments/account/balance",
           {
             method: "POST",
             headers: {
@@ -27,7 +27,7 @@ export const Dashboard = () => {
         setBalance(data.balance)
       };
       const getTransaction = async() => {
-        const response = await fetch("http://localhost:3000/paytin/payments/user/transactions", {
+        const response = await fetch("https://paytin.onrender.com/paytin/payments/user/transactions", {
           method: "GET",
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
