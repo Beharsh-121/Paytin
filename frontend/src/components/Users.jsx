@@ -13,7 +13,7 @@ export const Users = () => {
 
     useEffect(() => {
 
-        axios.get("http://localhost:3000/paytin/payments/user/bulk?filter=" + filter, {
+        axios.get("https://paytin.onrender.com/paytin/payments/user/bulk?filter=" + filter, {
             headers:{
                 Authorization: "Bearer "+ localStorage.getItem("token")
             }
