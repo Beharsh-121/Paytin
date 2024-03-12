@@ -48,7 +48,7 @@ export const SendMoney = () => {
                 onClick={() => {
                   axios
                     .post(
-                      "http://localhost:3000/paytin/payments/account/transfer",
+                      "https://paytin.onrender.com/paytin/payments/account/transfer",
                       {
                         to: id,
                         amount,
