@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 3000;
 app.use(cors()); //apply CORS middleware for all routes, meaning all routes in your app will allow cross-origin requests
 app.use(express.json());//middleware for body extraction
 
+app.use("/health", (req, res) => {
+   res.json({msg: "server is running"});
+})
+
 //api/v1
 app.use("/paytin/payments", mainRouter);
 
