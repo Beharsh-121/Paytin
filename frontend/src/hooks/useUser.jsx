@@ -8,7 +8,7 @@ export const useUser = () => {
   async function getDetails() {
     try {
       const res = await axios.get(
-        "http://localhost:3000/paytin/payments/user/me",
+        "https://paytin.onrender.com/paytin/payments/user/me",
         {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
